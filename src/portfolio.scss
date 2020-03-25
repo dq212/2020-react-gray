@@ -1,0 +1,382 @@
+
+//Colors
+$dark-gray:#222;
+$gray: #444;
+$light-gray:#999;
+$link-hover:#78a2a0;
+$off-white: #ebe9e9;
+
+body, html {
+    
+    box-sizing: border-box;
+    background: $dark-gray;
+    color:$off-white;
+    font: 400 15px/1.8 "Open Sans", sans-serif;
+    height: 100%;
+    margin: 0; }
+  
+  body {
+     }
+  
+  *, *:before, *:after {
+    box-sizing: inherit; }
+  
+  #showcase {
+    min-height: 100%;
+    color:$off-white;
+    text-align: center; }
+  
+  #showcase .bgimg-1 {
+    position: absolute;
+    width: 100%;
+    opacity: 0.7; }
+  
+  #footer {
+    height: 450px; }
+
+
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1; }
+  
+  .bgimg-1 {
+    //background-image: url("./images/puako-bw.jpg");
+    //min-height: 100%;
+    z-index: -1; }
+  
+  .bgimg-2 {
+   // background-image: url("./images/puako-bw.jpg");
+   // min-height: 300px; 
+  }
+  
+  .bgimg-3 {
+   // background-image: url("./images/puako-bw.jpg");
+   // min-height: 200px;
+   }
+
+  
+  
+  .color-block {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 40%; }
+  
+  .color-block span {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 8px; }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: $off-white}
+  
+  .caption span.border {
+    padding: 18px;
+    letter-spacing: 8px; }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 25px "Lato", sans-serif;
+    text-align: center; }
+  
+  .content {
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify; }
+
+    #client-block.content{
+      margin:2rem;
+      padding:50px 80px;
+     }
+  
+  .light-color-font {
+    background-color:$light-gray; }
+  
+  .dark-color-font {
+    color: #222; }
+  
+  .gray-color-font {
+    color: #777; }
+  
+  .white {
+    color: white; }
+  
+  .white-bg {
+    background-image: #fff; }
+  
+  .light-color-bg {
+    background: lighten($light-gray, 20%) }
+  
+  .medium-color-bg {
+    background: #4e797f; }
+  
+  .dark-color-bg {
+    background: $gray; }
+  
+  .section-headers {
+    background-color: transparent;
+    font-size: 2rem;
+    color: #fff; }
+  
+  span.contact-text {
+    letter-spacing: normal; }
+  
+  /*WORK*/
+   #work-holder {
+    width:100%;
+    text-align: center;
+    background:$light-gray;
+  } 
+  #work-holder h3 {
+    margin:0;
+  }
+  /* .item {
+    margin:0 auto;
+    margin:1rem;
+    padding:1rem;
+    display: block;
+    
+  } */
+  /* .item img {
+    max-width: 90%;
+    height: auto;
+    margin:1rem;
+    padding:1rem;
+  } */
+  /* #work-holder {
+    width:100%;
+    display:flex;
+    margin:2rem 0 0 0;
+  } */
+  /* SLIDER */
+  .slider {
+    background-color: $dark-gray;
+    /* border-radius: 8px 8px 0 0; */
+    height: 0;
+    color: #fff;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    /* left:5%; */
+    margin: 0 auto;
+    transition: all 0.3s;
+    width: 100%; }
+  
+  .slider:hover {
+    /* cursor: pointer; */
+  } 
+  
+  /* .slider.open {
+    height: 100%;
+    top: 0;
+  } */
+  .slider.close {
+    height: 100%;
+    opacity: 0.85;
+    top: 0; }
+  
+  .slider h3 {
+    letter-spacing: 3px;
+  padding:2rem 0 1rem 0}
+  
+  .slider .hover-text {
+    font-size: 2rem;
+    line-height: 2;
+    padding: 0.5rem 1.5rem;
+    text-align: justify; }
+
+    .contact-text a {
+      color:$off-white;
+      cursor: pointer;
+      font-weight: 400;
+      text-decoration: none;
+      z-index: 10;
+    }
+   .contact-text a:hover {
+      color:$link-hover;
+    }
+
+    .py-3 {
+       padding:3rem;
+    }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll; } }
+
+  @media (min-width: 768px) {
+    p {
+      text-align: center;
+    }
+    /* WORK */
+    .work-holder {
+      width: 100%;
+      display: flex;
+      /* background-image: url("../imgs/urban-city-view-street-black-600w-1023602029.webp"); */
+      // background: rgba(0, 0, 0, 0);
+    }
+  
+    .work-container {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 45% 45%;
+      justify-content: center;
+      align-items: center; }
+  
+    .item {
+      position: relative;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      height: auto;
+      margin: 1rem;
+      max-width: 100%;
+      /* margin:1rem; */ }
+  
+    .item img {
+      max-width: 100%;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      /* height: auto; */
+      /* padding:1rem; */
+      /* margin:0 auto; */
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+       -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); }
+  
+    .slider .hover-text {
+      font-size: 1rem;
+      line-height: 1.5;
+      padding: 0.5rem 1.5rem;
+      text-align: justify; } }
+  @media (min-width: 1024px) {
+    .slider h3 {
+      font-size: 1.8rem; }
+  
+    .slider .hover-text {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      padding: 0.5rem 1.5rem;
+      text-align: justify; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .slider .hover-text {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      padding: 0.5rem 1.5rem;
+      text-align: justify; } }
+  @media (max-width: 768px) {
+    .color-block {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 6px;
+      margin: 0 auto;
+      padding: 1rem;
+      width: 70%; }
+  
+    .color-block span {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 300;
+      /* letter-spacing: 8px; */
+      text-align: center; }
+  
+    .content {
+      text-align: center;
+      padding: 45px 40px;
+      text-align: justify; }
+  
+    /* WORK */
+    #work-holder {
+      display: block;
+      /* background-image: url("../imgs/urban-city-view-street-black-600w-1023602029.webp"); */
+      // background: rgba(0, 0, 0, 0);
+     }
+  
+    .work-container {
+      display: inline-block;
+      width: 100%; }
+  
+    .item {
+      position: relative;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+      height: auto;
+      margin: 1rem 0;
+      max-width: 100%;
+      /* margin:1rem; */ }
+  
+    .item img {
+      max-width: 100%;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      /* height: auto; */
+      /* padding:1rem; */
+      /* margin:0 auto; */
+      /* -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); */ }
+  
+    /* SLIDER */
+    .slider {
+      background-color: $dark-gray;
+      /* border-radius: 8px 8px 0 0; */
+      height: 60%;
+      color: #fff;
+      opacity: 0.9;
+      overflow: hidden;
+      position: absolute;
+      text-align: center;
+      top: 40%;
+      /* left:5%; */
+      margin: 0 auto;
+      transition: all 0.2s;
+      width: 100%; }
+  
+    .slider:hover {
+      cursor: pointer; }
+  
+    /* .slider.open {
+      height: 100%;
+      top: 0;
+    } */
+    .slider.close {
+      height: 60%;
+      top: 40%; }
+  
+    .slider h3 {
+      letter-spacing: 3px; 
+      line-height: 1.4;
+      font-size:1.2rem;
+      margin:2rem 0 0 0;
+    }
+  
+    .slider .hover-text {
+      font-size: 0.8rem;
+      line-height: 1.4;
+      margin:0.5rem 0;
+      padding: 0.5rem 1.5rem;
+      text-align: justify; } }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
