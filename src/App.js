@@ -10,7 +10,7 @@ import Work from './Work';
          text:'Registration for qualified leads to learn more about medical coverage gap.',
          tools:'HTML5, CSS3, JS, ReactJS, AWS - Lambda, GatewayAPI, SES, Route53, CloudFront, NodeJS',
          imgUrl: './images/work/Anthem-DAC.png',
-         link:''
+         link:'https://dq212.github.io/anthem-dac-react/index.html'
        },
        {
          id:2,
@@ -18,7 +18,7 @@ import Work from './Work';
          text:'iOS productivity app for motorcycle riders, builders, and enthusiasts.',
          tools:'Swift, Xcode, Photoshop, AppStore',
          imgUrl: './images/work/mp_app.jpg',
-         link:''
+         link:'https://itunes.apple.com/us/app/motopreserve/id1253423212?ls=1&mt=8'
        },
        {
          id:3,
@@ -42,7 +42,7 @@ import Work from './Work';
          text:'Wordpress custom page in order to get targeted registrations for lead generation.',
          tools:'HTML5, CSS3, JS',
          imgUrl: './images/work/zelis_landing_page.png',
-         link:''
+         link:'https://www.zelis.com/claimpass/'
        },
        {
          id:6,
@@ -50,7 +50,7 @@ import Work from './Work';
          text:'Site for Attorneys to get information about all  available types of insurance available to their profession',
          tools:'Photoshop, HTML5, CSS3, JS',
          imgUrl: './images/work/usi-site.png',
-         link:''
+         link:'http://www.usiaffinity.com/attorneyspreferred/'
        },
        {
          id:7,
@@ -58,7 +58,7 @@ import Work from './Work';
          text:'Information on new IngenioRx benefits in New York targeting union members.',
          tools:'HTML5, CSS3, JS, AWS, Route53, Cloudfront, SES',
          imgUrl: './images/work/empire-union-grade.png',
-         link:''
+         link:'http://www.nyuniongrade.com/'
        },
        {
          id:8,
@@ -66,7 +66,7 @@ import Work from './Work';
          text:'Landing page promoting older members re-entering the workforce after an extended hiatus.',
          tools:'HTML5, CSS3, JS',
          imgUrl: './images/work/aarp-irelaunch.png',
-         link:''
+         link:'https://dq212.github.io/aarp-irelaunch/'
        }
      ]
    }
@@ -88,10 +88,20 @@ import Work from './Work';
       }
   } 
 
+  onClick = (link) =>{
+    console.log(link);
+    const url = link['link'];
+    console.log(url);
+    window.open(url, '_blank');
+  }
+
+ 
+
     render() {
+      const {portItems} = this.state;
         return (
             <div>
-                <Work portItems={this.state.portItems} onMouseOver={this.onMouseOver} onMouseLeave={this.onMouseLeave}/>
+                <Work portItems={portItems} onMouseOver={this.onMouseOver} onMouseLeave={this.onMouseLeave} onClick={this.onClick}/>
             </div>
         )
     }

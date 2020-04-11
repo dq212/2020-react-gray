@@ -22,7 +22,7 @@ body, html {
     box-sizing: inherit; }
   
   #showcase {
-    min-height: 100%;
+    min-height: 600px;
     color:$off-white;
     text-align: center; }
   
@@ -79,7 +79,7 @@ body, html {
     position: absolute;
     left: 0;
     opacity: 1;
-    top: 30%;
+    top: 15%;
     width: 100%;
     text-align: center;
     color: $off-white}
@@ -100,8 +100,8 @@ body, html {
     text-align: justify; }
 
     #client-block.content{
-      margin:2rem;
-      padding:50px 80px;
+      // margin:2rem;
+      // padding:50px 80px;
      }
   
   .light-color-font {
@@ -180,7 +180,7 @@ body, html {
     width: 100%; }
   
   .slider:hover {
-    /* cursor: pointer; */
+    cursor: pointer;
   } 
   
   /* .slider.open {
@@ -201,7 +201,11 @@ body, html {
     line-height: 2;
     padding: 0.5rem 1.5rem;
     text-align: justify; }
-
+    
+    .slider a {
+      color:$link-hover;
+      text-decoration: none;
+    }
     .contact-text a {
       color:$off-white;
       cursor: pointer;
@@ -250,6 +254,9 @@ body, html {
       margin: 1rem;
       max-width: 100%;
       /* margin:1rem; */ }
+      .item a {
+        display:block;
+      }
   
     .item img {
       max-width: 100%;
@@ -267,17 +274,35 @@ body, html {
       font-size: 1rem;
       line-height: 1.5;
       padding: 0.5rem 1.5rem;
-      text-align: justify; } }
+      text-align: justify; } 
+    
+       .slider h3 {
+          font-size: 1.4rem; }
+        
+          .slider p {
+            margin:0;
+          }
+      
+        .slider .hover-text {
+          font-size: 1rem;
+          line-height: 1.5;
+          padding: 0.5rem 1.5rem;
+          text-align: justify; } 
+      }
   @media (min-width: 1024px) {
     .slider h3 {
       font-size: 1.8rem; }
   
     .slider .hover-text {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       line-height: 1.5;
       padding: 0.5rem 1.5rem;
-      text-align: justify; } }
+      text-align: justify; } 
+  }
   @media (min-width: 768px) and (max-width: 1024px) {
+    .item a {
+      display:block;
+    }
     .slider .hover-text {
       font-size: 0.9rem;
       line-height: 1.5;
@@ -324,8 +349,13 @@ body, html {
       margin: 1rem 0;
       max-width: 100%;
       /* margin:1rem; */ }
+
+      .item a {
+        display:none;
+      }
   
     .item img {
+      cursor: pointer;
       max-width: 100%;
       display: block;
       text-align: center;
@@ -341,13 +371,13 @@ body, html {
     .slider {
       background-color: $dark-gray;
       /* border-radius: 8px 8px 0 0; */
-      height: 60%;
+      height: 75%;
       color: #fff;
       opacity: 0.9;
       overflow: hidden;
       position: absolute;
       text-align: center;
-      top: 40%;
+      top: 25%;
       /* left:5%; */
       margin: 0 auto;
       transition: all 0.2s;
@@ -361,21 +391,22 @@ body, html {
       top: 0;
     } */
     .slider.close {
-      height: 60%;
-      top: 40%; }
+      height: 75%;
+      top: 25%; }
   
     .slider h3 {
       letter-spacing: 3px; 
       line-height: 1.4;
-      font-size:1.2rem;
-      margin:2rem 0 0 0;
+      font-size:1.3rem;
+      padding: 0.9rem 0.5rem 0.75rem 0.5rem;
+      margin:1rem 0 0 0;
     }
   
     .slider .hover-text {
       font-size: 0.8rem;
       line-height: 1.4;
-      margin:0.5rem 0;
-      padding: 0.5rem 1.5rem;
+      margin:0.15rem 0;
+      padding: 0.5rem 1rem;
       text-align: justify; } }
   
   /*# sourceMappingURL=styles.css.map */
