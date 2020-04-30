@@ -26,7 +26,7 @@ import Work from './Work';
          text:'React/Redux web app for motorcycle riders, builders, and enthusiasts.Built to support the iOS app.',
          tools:'React, Redux, Webpack, HTML, CSS, JS, Photoshop',
          imgUrl: './images/work/mp_app_react.png',
-         link:''
+         link:'https://mp-react-2.herokuapp.com/'
        },
        {
          id:4,
